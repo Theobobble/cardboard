@@ -28,9 +28,9 @@ This document tracks all features, patches, and events that need to be implement
 ### Items
 - [ ] CrossbowItem
 - [ ] EnderPearlItem
-- [x] DecorationItem
+- [ ] DecorationItem
 - [ ] LeadItem
-- [x] MilkBucketItem
+- [ ] MilkBucketItem
 - [ ] MinecartItem
 - [ ] PotionItem
 - [x] SignItem
@@ -281,7 +281,7 @@ This document tracks all features, patches, and events that need to be implement
 | Core Patches | ~80 | ~43 | 54% |
 | Events | ~100 | ~40 | 40% |
 | Plugin Compatibility | 6 | 0 | 0% |
-| Bug Fixes | 20+ | 0 | 0% |
+| Bug Fixes | 20+ | 1 | 5% |
 | Enhancements | 5 | 0 | 0% |
 
 **Note**: These are rough estimates based on the TODO lists. See PR #2 for recent progress. Actual progress may vary.
