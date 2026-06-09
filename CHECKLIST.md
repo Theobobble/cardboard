@@ -4,6 +4,7 @@
 > **Repository**: [Theobobble/cardboard](https://github.com/Theobobble/cardboard)  
 > **Upstream**: [CardboardPowered/cardboard](https://github.com/CardboardPowered/cardboard)  
 > **Last Updated**: June 9, 2026
+> **Current Version**: 26.1
 
 This document tracks all features, patches, and events that need to be implemented for Cardboard to be complete. Cardboard is a Fabric mod that implements the Bukkit/Spigot/Paper plugin APIs.
 
@@ -226,21 +227,6 @@ This document tracks all features, patches, and events that need to be implement
 ### Compatibility Enhancements
 - [ ] Paper PluginLoader - Support for loading library dependencies
 - [ ] Single Player Support - Add plugin folder support for single player worlds
-
----
-
-## Platform Support
-
-### Minecraft Versions
-- [x] Fabric 26.1.2 (Active development)
-- [x] Fabric 1.21.11 (Low maintenance)
-- [x] Fabric 1.21.1 (Low maintenance)
-- [ ] NeoForge Port - Requested for 1.21.1
-
-### Version-Specific Issues
-- [ ] 1.21.10 - Multiple issues reported
-- [ ] 1.21.4 - Server does not load
-- [ ] 1.20.1 - Various compatibility issues
 
 ---
 
