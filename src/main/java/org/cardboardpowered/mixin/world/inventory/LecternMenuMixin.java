@@ -18,7 +18,6 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import org.cardboardpowered.bridge.world.entity.EntityBridge;
-import org.cardboardpowered.bridge.server.level.ServerPlayerBridge;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(LecternMenu.class)
@@ -49,17 +48,13 @@ public class LecternMenuMixin extends AbstractContainerMenuMixin {
         if (bukkitEntity != null) return bukkitEntity;
 
         CraftInventoryLectern inventory = new CraftInventoryLectern(this.lectern);
-        // Ensure player is not null
-        if (this.player == null && this.container instanceof Inventory) {
-            Inventory inv = (Inventory) this.container;
-            if (inv.player != null && inv.player instanceof ServerPlayerBridge) {
-                this.player = (org.bukkit.entity.Player) ((EntityBridge) inv.player).getBukkitEntity();
-            }
-        }
+        
+        // Ensure player is set from the constructor
         if (this.player == null) {
-            // Fallback: create a view without a player (should not normally happen)
+            // Fallback: cannot create view without player
             return null;
         }
+        
         bukkitEntity = new CraftInventoryView(this.player, inventory, (LecternMenu)(Object)this);
         return bukkitEntity;
     }
