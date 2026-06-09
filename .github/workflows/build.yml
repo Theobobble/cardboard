@@ -26,12 +26,10 @@ jobs:
       uses: gradle/wrapper-validation-action@v3
 
     - name: Setup Gradle
-      uses: gradle/actions/setup-gradle@v3
+      uses: gradle/gradle-build-action@v3
 
     - name: Build with Gradle
-      uses: gradle/actions/gradle-build-action@v3
-      with:
-        arguments: build
+      run: ./gradlew build
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
