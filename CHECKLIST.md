@@ -28,19 +28,19 @@ This document tracks all features, patches, and events that need to be implement
 ### Items
 - [ ] CrossbowItem
 - [ ] EnderPearlItem
-- [ ] DecorationItem
+- [x] DecorationItem
 - [ ] LeadItem
-- [ ] MilkBucketItem
+- [x] MilkBucketItem
 - [ ] MinecartItem
 - [ ] PotionItem
-- [ ] SignItem
+- [x] SignItem
 - [ ] SnowballItem
 - [ ] ItemStack
 
 ### Screen Handlers
 - [ ] ScreenHandler
-- [ ] CartographyTableScreenHandler
-- [ ] ScreenHandlerType
+- [x] CartographyTableScreenHandler
+- [x] ScreenHandlerType
 
 ### Entity Related
 - [ ] Angerable
@@ -233,7 +233,7 @@ This document tracks all features, patches, and events that need to be implement
 ## Bug Fixes
 
 ### Critical Bugs
-- [ ] Lectern crashes - Invalid casts and null Bukkit player in 1.21.11
+- [x] Lectern crashes - Invalid casts and null Bukkit player in 1.21.11
 - [ ] NullPointerException - CraftItemStack.getItemMeta when decoding packets
 - [ ] Unbreaking not applying - Durability enchantment ignored
 - [ ] Invalid Player Data - Connection issues
@@ -278,13 +278,13 @@ This document tracks all features, patches, and events that need to be implement
 
 | Category | Total | Completed | Percentage |
 |----------|-------|-----------|------------|
-| Core Patches | ~80 | ~40 | 50% |
+| Core Patches | ~80 | ~43 | 54% |
 | Events | ~100 | ~40 | 40% |
 | Plugin Compatibility | 6 | 0 | 0% |
 | Bug Fixes | 20+ | 0 | 0% |
 | Enhancements | 5 | 0 | 0% |
 
-**Note**: These are rough estimates based on the TODO lists. Actual progress may vary.
+**Note**: These are rough estimates based on the TODO lists. See PR #2 for recent progress. Actual progress may vary.
 
 ---
 
