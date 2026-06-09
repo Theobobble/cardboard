@@ -26,16 +26,16 @@ This document tracks all features, patches, and events that need to be implement
 > Source: [Issue #10 - TODO Port Patches](https://github.com/CardboardPowered/cardboard/issues/10)
 
 ### Items
-- [ ] CrossbowItem
-- [ ] EnderPearlItem
+- [x] CrossbowItem
+- [x] EnderPearlItem
 - [ ] DecorationItem
-- [ ] LeadItem
+- [x] LeadItem
 - [ ] MilkBucketItem
-- [ ] MinecartItem
-- [ ] PotionItem
+- [x] MinecartItem
+- [x] PotionItem
 - [x] SignItem
-- [ ] SnowballItem
-- [ ] ItemStack
+- [x] SnowballItem
+- [x] ItemStack
 
 ### Screen Handlers
 - [x] ScreenHandler
@@ -47,18 +47,18 @@ This document tracks all features, patches, and events that need to be implement
 - [x] EntityPredicates
 
 ### Block Entities
-- [ ] BeaconBlockEntity
-- [ ] CommandBlockBlockEntity
-- [ ] ConduitBlockEntity
+- [x] BeaconBlockEntity
+- [x] CommandBlockBlockEntity
+- [x] ConduitBlockEntity
 
 ### Recipes
-- [ ] ServerRecipeBook
+- [x] ServerRecipeBook
 
 ### World-related
-- [ ] ChunkTicketManager
-- [ ] GameRules
+- [x] ChunkTicketManager
+- [x] GameRules
 - [ ] VersionedChunkStorage
-- [ ] ModifiableWorld
+- [x] ModifiableWorld
 - [ ] ChunkHolder
 - [ ] ThreadedAnvilChunkStorage
 - [ ] World
@@ -278,7 +278,7 @@ This document tracks all features, patches, and events that need to be implement
 
 | Category | Total | Completed | Percentage |
 |----------|-------|-----------|------------|
-| Core Patches | ~80 | ~45 | 56% |
+| Core Patches | ~80 | ~53 | 66% |
 | Events | ~100 | ~40 | 40% |
 | Plugin Compatibility | 6 | 0 | 0% |
 | Bug Fixes | 20+ | 1 | 5% |
