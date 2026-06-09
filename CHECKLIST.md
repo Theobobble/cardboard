@@ -3,7 +3,7 @@
 > **Status**: Work in Progress  
 > **Repository**: [Theobobble/cardboard](https://github.com/Theobobble/cardboard)  
 > **Upstream**: [CardboardPowered/cardboard](https://github.com/CardboardPowered/cardboard)  
-> **Last Updated**: June 9, 2026
+> **Last Updated**: June 9, 2026  
 > **Current Version**: 26.1
 
 This document tracks all features, patches, and events that need to be implemented for Cardboard to be complete. Cardboard is a Fabric mod that implements the Bukkit/Spigot/Paper plugin APIs.
