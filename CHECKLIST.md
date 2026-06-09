@@ -26,42 +26,42 @@ This document tracks all features, patches, and events that need to be implement
 > Source: [Issue #10 - TODO Port Patches](https://github.com/CardboardPowered/cardboard/issues/10)
 
 ### Items
-- [ ] CrossbowItem
-- [ ] EnderPearlItem
+- [x] CrossbowItem
+- [x] EnderPearlItem
 - [ ] DecorationItem
-- [ ] LeadItem
+- [x] LeadItem
 - [ ] MilkBucketItem
-- [ ] MinecartItem
-- [ ] PotionItem
-- [ ] SignItem
-- [ ] SnowballItem
-- [ ] ItemStack
+- [x] MinecartItem
+- [x] PotionItem
+- [x] SignItem
+- [x] SnowballItem
+- [x] ItemStack
 
 ### Screen Handlers
-- [ ] ScreenHandler
-- [ ] CartographyTableScreenHandler
-- [ ] ScreenHandlerType
+- [x] ScreenHandler
+- [x] CartographyTableScreenHandler
+- [x] ScreenHandlerType
 
 ### Entity Related
-- [ ] Angerable
-- [ ] EntityPredicates
+- [x] Angerable
+- [x] EntityPredicates
 
 ### Block Entities
-- [ ] BeaconBlockEntity
-- [ ] CommandBlockBlockEntity
-- [ ] ConduitBlockEntity
+- [x] BeaconBlockEntity
+- [x] CommandBlockBlockEntity
+- [x] ConduitBlockEntity
 
 ### Recipes
-- [ ] ServerRecipeBook
+- [x] ServerRecipeBook
 
 ### World-related
-- [ ] ChunkTicketManager
-- [ ] GameRules
+- [x] ChunkTicketManager
+- [x] GameRules
 - [ ] VersionedChunkStorage
-- [ ] ModifiableWorld
-- [ ] ChunkHolder
-- [ ] ThreadedAnvilChunkStorage
-- [ ] World
+- [x] ModifiableWorld
+- [x] ChunkHolder
+- [x] ThreadedAnvilChunkStorage
+- [x] World
 - [ ] WorldBorderS2CPacket
 - [ ] SaplingGenerator
 - [ ] BiomeArray
@@ -233,7 +233,7 @@ This document tracks all features, patches, and events that need to be implement
 ## Bug Fixes
 
 ### Critical Bugs
-- [ ] Lectern crashes - Invalid casts and null Bukkit player in 1.21.11
+- [x] Lectern crashes - Invalid casts and null Bukkit player in 1.21.11
 - [ ] NullPointerException - CraftItemStack.getItemMeta when decoding packets
 - [ ] Unbreaking not applying - Durability enchantment ignored
 - [ ] Invalid Player Data - Connection issues
@@ -278,13 +278,13 @@ This document tracks all features, patches, and events that need to be implement
 
 | Category | Total | Completed | Percentage |
 |----------|-------|-----------|------------|
-| Core Patches | ~80 | ~40 | 50% |
+| Core Patches | ~80 | ~60 | 75% |
 | Events | ~100 | ~40 | 40% |
 | Plugin Compatibility | 6 | 0 | 0% |
-| Bug Fixes | 20+ | 0 | 0% |
+| Bug Fixes | 20+ | 1 | 5% |
 | Enhancements | 5 | 0 | 0% |
 
-**Note**: These are rough estimates based on the TODO lists. Actual progress may vary.
+**Note**: These are rough estimates based on the TODO lists. See PR #2 for recent progress. Actual progress may vary.
 
 ---
 
@@ -313,7 +313,7 @@ This document tracks all features, patches, and events that need to be implement
 
 ## Notes
 
-1. This checklist is based on the upstream repositorys TODO issues and open issues as of June 9, 2026.
+1. This checklist is based on the upstream repositorys TODO issues and open open issues as of June 9, 2026.
 2. Some items may already be partially implemented or in progress.
 3. The TODO lists (Issues #9 and #10) have not been updated recently and may contain outdated information.
 4. Priority is subjective and based on user impact and frequency of reports.
@@ -325,6 +325,6 @@ This document tracks all features, patches, and events that need to be implement
 
 - [Upstream Repository](https://github.com/CardboardPowered/cardboard)
 - [Issue #10: TODO Port Patches](https://github.com/CardboardPowered/cardboard/issues/10)
-- [Issue #9: TODO Events](https://github.com/CardboardPowered/cardboard/issues/9)
+- [Issue #9: TODO Events](https://github.com/CardboardPowered/cardboard/issues/10)
 - [Open Issues](https://github.com/CardboardPowered/cardboard/issues)
 - [Discord Server](https://discord.gg/tddTWXZtaP)
