@@ -38,7 +38,7 @@ This document tracks all features, patches, and events that need to be implement
 - [ ] ItemStack
 
 ### Screen Handlers
-- [ ] ScreenHandler
+- [x] ScreenHandler
 - [x] CartographyTableScreenHandler
 - [x] ScreenHandlerType
 
@@ -325,6 +325,6 @@ This document tracks all features, patches, and events that need to be implement
 
 - [Upstream Repository](https://github.com/CardboardPowered/cardboard)
 - [Issue #10: TODO Port Patches](https://github.com/CardboardPowered/cardboard/issues/10)
-- [Issue #9: TODO Events](https://github.com/CardboardPowered/cardboard/issues/9)
+- [Issue #9: TODO Events](https://github.com/CardboardPowered/cardboard/issues/10)
 - [Open Issues](https://github.com/CardboardPowered/cardboard/issues)
 - [Discord Server](https://discord.gg/tddTWXZtaP)
