@@ -18,6 +18,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import org.cardboardpowered.bridge.world.entity.EntityBridge;
+import org.cardboardpowered.bridge.server.level.ServerPlayerBridge;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(LecternMenu.class)
@@ -33,8 +34,14 @@ public class LecternMenuMixin extends AbstractContainerMenuMixin {
     private org.bukkit.entity.Player player;
 
     @Inject(method = "<init>(ILnet/minecraft/world/Container;Lnet/minecraft/world/inventory/ContainerData;)V", at = @At("TAIL"))
-    public void setPlayerInv(int i, Container iinventory, ContainerData icontainerproperties, CallbackInfo ci) {
-        this.player = (org.bukkit.entity.Player)((EntityBridge)((Inventory)iinventory).player).getBukkitEntity();
+    public void setPlayerInv(int i, Container container, ContainerData icontainerproperties, CallbackInfo ci) {
+        // Fix: Check if container is an Inventory with a player
+        if (container instanceof Inventory) {
+            Inventory inventory = (Inventory) container;
+            if (inventory.player != null) {
+                this.player = (org.bukkit.entity.Player) ((EntityBridge) inventory.player).getBukkitEntity();
+            }
+        }
     }
 
     @Override
@@ -42,6 +49,17 @@ public class LecternMenuMixin extends AbstractContainerMenuMixin {
         if (bukkitEntity != null) return bukkitEntity;
 
         CraftInventoryLectern inventory = new CraftInventoryLectern(this.lectern);
+        // Ensure player is not null
+        if (this.player == null && this.container instanceof Inventory) {
+            Inventory inv = (Inventory) this.container;
+            if (inv.player != null && inv.player instanceof ServerPlayerBridge) {
+                this.player = (org.bukkit.entity.Player) ((EntityBridge) inv.player).getBukkitEntity();
+            }
+        }
+        if (this.player == null) {
+            // Fallback: create a view without a player (should not normally happen)
+            return null;
+        }
         bukkitEntity = new CraftInventoryView(this.player, inventory, (LecternMenu)(Object)this);
         return bukkitEntity;
     }
@@ -71,6 +89,11 @@ public class LecternMenuMixin extends AbstractContainerMenuMixin {
                 case 3:
                     if (!entityhuman.mayBuild()) return false;
 
+                    // Ensure player is set
+                    if (this.player == null) {
+                        this.player = (org.bukkit.entity.Player) ((EntityBridge) entityhuman).getBukkitEntity();
+                    }
+                    
                     PlayerTakeLecternBookEvent event = new PlayerTakeLecternBookEvent(player, ((CraftInventoryLectern) getBukkitView().getTopInventory()).getHolder());
                     Bukkit.getServer().getPluginManager().callEvent(event);
                     if (event.isCancelled()) return false;
