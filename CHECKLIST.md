@@ -59,9 +59,9 @@ This document tracks all features, patches, and events that need to be implement
 - [x] GameRules
 - [ ] VersionedChunkStorage
 - [x] ModifiableWorld
-- [ ] ChunkHolder
-- [ ] ThreadedAnvilChunkStorage
-- [ ] World
+- [x] ChunkHolder
+- [x] ThreadedAnvilChunkStorage
+- [x] World
 - [ ] WorldBorderS2CPacket
 - [ ] SaplingGenerator
 - [ ] BiomeArray
@@ -278,7 +278,7 @@ This document tracks all features, patches, and events that need to be implement
 
 | Category | Total | Completed | Percentage |
 |----------|-------|-----------|------------|
-| Core Patches | ~80 | ~53 | 66% |
+| Core Patches | ~80 | ~60 | 75% |
 | Events | ~100 | ~40 | 40% |
 | Plugin Compatibility | 6 | 0 | 0% |
 | Bug Fixes | 20+ | 1 | 5% |
@@ -313,7 +313,7 @@ This document tracks all features, patches, and events that need to be implement
 
 ## Notes
 
-1. This checklist is based on the upstream repositorys TODO issues and open issues as of June 9, 2026.
+1. This checklist is based on the upstream repositorys TODO issues and open open issues as of June 9, 2026.
 2. Some items may already be partially implemented or in progress.
 3. The TODO lists (Issues #9 and #10) have not been updated recently and may contain outdated information.
 4. Priority is subjective and based on user impact and frequency of reports.
