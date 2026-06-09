@@ -43,8 +43,8 @@ This document tracks all features, patches, and events that need to be implement
 - [x] ScreenHandlerType
 
 ### Entity Related
-- [ ] Angerable
-- [ ] EntityPredicates
+- [x] Angerable
+- [x] EntityPredicates
 
 ### Block Entities
 - [ ] BeaconBlockEntity
@@ -278,7 +278,7 @@ This document tracks all features, patches, and events that need to be implement
 
 | Category | Total | Completed | Percentage |
 |----------|-------|-----------|------------|
-| Core Patches | ~80 | ~43 | 54% |
+| Core Patches | ~80 | ~45 | 56% |
 | Events | ~100 | ~40 | 40% |
 | Plugin Compatibility | 6 | 0 | 0% |
 | Bug Fixes | 20+ | 1 | 5% |
